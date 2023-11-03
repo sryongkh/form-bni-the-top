@@ -17,9 +17,14 @@
     <title>BNI The Top - Form</title>
   </head>
   <body>
-    <main class="animate__animated animate__fadeIn">
+    <main>
       <div id="center_box" class="success_box">
-        <img id="logo" src="/assets/logo.png" class="animate__animated animate__fadeInDown" alt="" />
+        <img
+          id="logo"
+          src="/assets/logo.png"
+          class="animate__animated animate__fadeInDown"
+          alt=""
+        />
         <div id="formbox" class="transition-all">
           <div id="success_txt">
             <p class="transition-all">ขอบคุณสำหรับข้อมูล</p>
@@ -33,5 +38,10 @@
         </div>
       </footer>
     </main>
+    <script>
+      $(document).ready(function () {
+        $("body").fadeIn(1000).addClass("visible");
+      });
+    </script>
   </body>
 </html>

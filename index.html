@@ -17,9 +17,15 @@
     <title>BNI The Top - Form</title>
   </head>
   <body>
-    <main class="animate__animated animate__fadeIn">
+    <div class="hidden"></div>
+    <main>
       <div id="center_box">
-        <img id="logo" src="/assets/logo.png" class="animate__animated animate__fadeInDown" alt="" />
+        <img
+          id="logo"
+          src="/assets/logo.png"
+          class="animate__animated animate__fadeInDown"
+          alt=""
+        />
         <div id="formbox" class="transition-all">
           <p class="transition-all">
             ท่านใดที่พบปัญหาเหล่านี้
@@ -98,5 +104,16 @@
         </div>
       </footer>
     </main>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("body").addClass("hidden");
+        $("body").fadeIn(1000).addClass("visible");
+      });
+    </script>
   </body>
 </html>
